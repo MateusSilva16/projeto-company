@@ -12,9 +12,20 @@
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "json-server": "^0.17.2",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0",
+    "styled-components": "^5.3.9",
+    "typescript": "5.0.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
