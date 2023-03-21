@@ -1,15 +1,16 @@
 import React from 'react';
-import ItemMenu from './ItemMenu';
+import ItemMenu from '../ItemMenu';
 import * as S from './styles';
 import { FiHome, FiBriefcase, FiUser, FiDollarSign } from 'react-icons/fi';
 import { TbReportMoney } from 'react-icons/tb';
-import tokens from '../../../utils/tokens';
+import tokens from '../../../../utils/tokens';
 
-const NavigationMenu = ({}) => {
+const NavigationMenuDesktop = ({}) => {
   return (
     <S.ContainerNav>
       <S.Containerlogo>
         <TbReportMoney size={30} color={tokens.colors.color4}/>
+        <S.Title>Project  Budget </S.Title>
       </S.Containerlogo>
       <S.UlNav>
         <ItemMenu
@@ -37,4 +38,4 @@ const NavigationMenu = ({}) => {
   );
 };
 
-export default NavigationMenu;
+export default NavigationMenuDesktop;

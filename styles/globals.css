@@ -13,3 +13,11 @@ body {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar{
+  background-color: lightslategray;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #00200d;
+}

@@ -3,11 +3,13 @@ import tokens from '../../../../utils/tokens';
 
 export const LiItem = styled.li`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100%;
+  width: 100%;
   cursor: pointer;
   padding: 10px;
+  border-bottom: 2px solid transparent;
   &:hover {
     border-bottom: 2px solid ${tokens.colors.color3};
   }

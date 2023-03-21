@@ -2,9 +2,9 @@ import { useEffect } from "react";
 
 export function usePageTitle(title: string) {
   useEffect(() => {
-    document.title = title || "Projeto Company";
+    document.title = title || "Project Budget";
     return () => {
-      document.title = "Projeto Company";
+      document.title = "Project Budget";
     };
   }, [title]);
   return null;
