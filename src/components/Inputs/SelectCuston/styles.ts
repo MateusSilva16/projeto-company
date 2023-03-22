@@ -13,9 +13,9 @@ export const ContainerInput = styled.div`
   flex-direction: column;
   width: 100%;
   margin: 0.7em 0;
+`;
 
-  h3 {
-    font-size: 13px;
+export const Label = styled.label`
+ font-size: 13px;
     font-family: sans-serif;
-  }
 `;
