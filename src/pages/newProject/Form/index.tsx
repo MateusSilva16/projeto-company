@@ -41,15 +41,18 @@ const Forms = ({ handleSubmit, btnTExt, projectData }: any) => {
   return (
     <S.FormCuston onSubmit={submit}>
       <InputCuston
+        label="Nome do Projeto:"
         type="text"
-        name="Nome do Projeto:"
+        name="name"
         placeholder="Insira Nome do Projeto"
         handleOnChange={handleChange}
         value={project.name}
       />
+
       <InputCuston
+        label="Orçamento Total:"
         type="number"
-        name="Orçamento Total:"
+        name="budget"
         placeholder="Insira Orçamento Total"
         handleOnChange={handleChange}
         value={project.budget}

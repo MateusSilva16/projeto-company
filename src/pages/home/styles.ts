@@ -8,7 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   background-color: ${tokens.colors.content};
   width: 100%;
-  height: 100%;
+  height: 87vh;
 `;
 
 export const Title = styled.h1`

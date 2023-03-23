@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: ${tokens.colors.content};
   width: 100%;
-  height: 100%;
+  height: 87vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 `;
 

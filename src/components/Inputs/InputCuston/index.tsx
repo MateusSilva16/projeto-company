@@ -1,5 +1,13 @@
 import * as S from './styles';
 
+interface InputProps {
+  type: string;
+  name: string;
+  placeholder: string;
+  handleOnChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
+  value: string | number | readonly string[] | undefined;
+  label: string;
+}
 
 const InputCuston = ({
   type,
@@ -7,11 +15,13 @@ const InputCuston = ({
   placeholder,
   handleOnChange,
   value,
-}: any) => {
+  label,
+}: InputProps) => {
   return (
     <S.ContainerInput>
-      <h3>{name}</h3>
+      <h3>{label}</h3>
       <S.InputCuston
+        name={name}
         type={type}
         placeholder={placeholder}
         onChange={handleOnChange}
