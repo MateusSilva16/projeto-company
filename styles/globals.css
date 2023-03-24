@@ -15,11 +15,11 @@ a {
   text-decoration: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background-color: transparent;
   width: 6px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #0b1216;
 }

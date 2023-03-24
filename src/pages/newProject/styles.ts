@@ -36,3 +36,10 @@ export const Description = styled.p`
     font-size: 13px;
   }
 `;
+
+export const ContainerForms = styled.p`
+  width: 450px;
+
+  @media (max-width: 470px) {
+  }
+`;

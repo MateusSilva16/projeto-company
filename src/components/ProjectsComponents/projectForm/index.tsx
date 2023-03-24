@@ -1,24 +1,24 @@
 import { useState, useEffect } from 'react';
-import InputCuston from '../../../components/Inputs/InputCuston';
-import SelectCuston from '../../../components/Inputs/SelectCuston';
+import InputCuston from '../../Inputs/InputCuston';
+import SelectCuston from '../../Inputs/SelectCuston';
 import * as S from './styles';
 
-const Forms = ({ handleSubmit, btnTExt, projectData }: any) => {
-  const [categories, setCategories] = useState([]);
+const Forms = ({ handleSubmit, btnText, projectData }: any) => {
   const [project, setProject] = useState(projectData || {});
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:5000/categories', {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+      },
     })
       .then((resp) => resp.json())
       .then((data) => {
         setCategories(data);
-      })
-      .catch((err) => console.log(err));
+      });
   }, []);
-
   const submit = (e: any) => {
     e.preventDefault();
     handleSubmit(project);
@@ -66,7 +66,7 @@ const Forms = ({ handleSubmit, btnTExt, projectData }: any) => {
         value={project.category ? project.category.id : ''}
       />
 
-      <S.InputButton type="submit">{btnTExt}</S.InputButton>
+      <S.InputButton type="submit">{btnText}</S.InputButton>
     </S.FormCuston>
   );
 };

@@ -4,7 +4,7 @@ export const SelectCuston = styled.select`
   margin: 0.2em 0;
   width: 100%;
   height: 40px;
-  padding: 0 .2em; 
+  padding: 0 0.2em;
   border-radius: 6px;
 `;
 
@@ -16,6 +16,7 @@ export const ContainerInput = styled.div`
 `;
 
 export const Label = styled.label`
- font-size: 13px;
-    font-family: sans-serif;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 600;
 `;

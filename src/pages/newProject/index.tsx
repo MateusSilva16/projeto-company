@@ -1,4 +1,4 @@
-import Forms from '@/pages/newProject/Form';
+import Forms from '@/components/ProjectsComponents/projectForm';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import * as S from './styles';
 import { useNavigate } from 'react-router-dom';
@@ -36,8 +36,9 @@ const NewProject = () => {
           Crie seu Projeto para depois adicionar novos serviços
         </S.Description>
       </S.ContainerDescription>
-
-      <Forms btnTExt={'Criar Projeto'} handleSubmit={createPost} />
+      <S.ContainerForms>
+        <Forms btnText={'Criar Projeto'} handleSubmit={createPost} />
+      </S.ContainerForms>
     </S.Container>
   );
 };

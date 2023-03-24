@@ -1,4 +1,4 @@
-import LinkButton from '@/components/Button';
+import LinkButton from '@/components/Buttons/ButtonLink';
 import { usePageTitle } from '@/hooks/usePageTitle';
 import * as S from './styles';
 

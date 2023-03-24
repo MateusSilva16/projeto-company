@@ -1,4 +1,4 @@
-import LinkButton from '@/components/Button';
+import LinkButton from '@/components/Buttons/ButtonLink';
 import Content from '@/components/Layout/Content';
 import Message from '@/components/Message';
 import ProjetCard from '@/components/ProjectsComponents/projectCard';
@@ -7,6 +7,8 @@ import * as S from './styles';
 import React, { useState, useEffect } from 'react';
 import Loading from '@/components/Loading';
 import { usePageTitle } from '@/hooks/usePageTitle';
+import Modal from '@/components/Modal';
+import EditProject from '../editProject';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -46,7 +48,7 @@ const Projects = () => {
       .then((resp) => resp.json())
       .then((data) => {
         setProjects(projects.filter((project: any) => project.id !== id));
-        setProjectMessage('Projeto removidoccom sucesso !!');
+        setProjectMessage('Projeto removido com sucesso !!');
       })
       .catch((err) => console.log(err));
   }
@@ -79,6 +81,7 @@ const Projects = () => {
       </S.Container>
       {projectMessage && <Message msg={projectMessage} typeSucess={false} />}
       {message && <Message msg={message} typeSucess={true} />}
+
     </>
   );
 };

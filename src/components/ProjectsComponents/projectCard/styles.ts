@@ -56,8 +56,8 @@ export const Actions = styled.div`
   }
 `;
 
-export const Remove = styled.button`
-  display: flex;
+export const Edit = styled.button`
+ display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #222;
@@ -69,36 +69,6 @@ export const Remove = styled.button`
   cursor: pointer;
   margin: 0.2em;
   transition: 0.2s;
-
-  p {
-    margin: 0;
-    padding: 0 0.5em;
-  }
-
-  :hover {
-    background-color: ${tokens.colors.color4};
-    color: #222;
-
-    p {
-      margin: 0;
-      padding: 0 0.5em;
-      color: #222;
-    }
-  }
-`;
-
-export const Edit = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #222;
-  color: ${tokens.colors.color4};
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-  margin: 0.5em 0;
 
   p {
     margin: 0;

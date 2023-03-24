@@ -11,6 +11,7 @@ import NavigationMenuMobile from '@/components/Layout/NavigationMenu/MenuMobile'
 import NavigationMenuDesktop from '@/components/Layout/NavigationMenu/MenuDesktop';
 import AppProvider, { contextApp } from '../contexts/index';
 import Projects from './projects';
+import EditProject from './editProject';
 
 /* const isBrowser = typeof window !== 'undefined'; */
 
@@ -66,6 +67,7 @@ export default function AppHome() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/newProject" element={<NewProject />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/editProject/:id" element={<EditProject />} />
           </Routes>
         </Content>
         <Footer />
