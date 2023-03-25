@@ -10,7 +10,7 @@ export const Container = styled.div<{
   text-align: center;
   margin-bottom: 2em;
   border-radius: 5px;
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 20px;
   

@@ -64,9 +64,34 @@ export const ProjectInfo = styled.div`
 export const ServiceFormContainer = styled.div`
   border-bottom: 1px solid #7a7a7a;
   margin-bottom: 1.2em;
-  padding-bottom: 1.2em;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+`;
+
+
+export const ContainerDetailsService = styled.div`
+  border-bottom: 1px solid #7a7a7a;
+  margin-bottom: 1.2em;
+  padding-bottom: 1.2em;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-area: auto;
+  gap: 15px;
+  width: 100%;
+
+  @media (max-width: 1147px) {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  @media (max-width: 860px) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (max-width: 580px) {
+    grid-template-columns: 100%;
+  }
 `;

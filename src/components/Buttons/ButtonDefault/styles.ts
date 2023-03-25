@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const ButtonCustom = styled.button<{
   width: string;
   height: string;
-  justifyContent: string;
+  justifyContent?: string;
 }>`
   display: flex;
   align-items: center;
