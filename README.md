@@ -19,7 +19,13 @@ npm run backend (http://localhost:5000/projects/) e (http://localhost:5000/categ
 Sobre:
 
 ```bash
-Projeto desenvolvido para estudo, usado o json serve para simular a api
+Projeto desenvolvido com REACT e NEXT js, usado: 
+Json-Serve para simular a api,
+Styled-Components para stylos,
+React-Icons para os ícones,
+React-Router-Dom para roteamento,
+uuid para criar um ID único,
+TypeScript para Lógicas.
 ```
 
 Aprendendo a usar:
