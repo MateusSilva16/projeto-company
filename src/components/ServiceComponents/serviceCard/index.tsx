@@ -6,7 +6,7 @@ import * as S from './styles';
 const ServiceCard = ({ id, name, cost, description, handleRemove }: any) => {
   const remove = (e: any) => {
     e.preventDefault();
-    handleRemove(id, cost);
+    handleRemove(id);
   };
 
   return (
@@ -16,14 +16,12 @@ const ServiceCard = ({ id, name, cost, description, handleRemove }: any) => {
         <span>Custo total: </span>R${cost}
       </p>
       <S.TextCategory>{description}</S.TextCategory>
-      <S.Actions>
-        <Button
-          action={remove}
-          text='Excluir'
-          icon={<BsFillTrashFill />}
-          width={'120px'}
-        />
-      </S.Actions>
+      {/*   <S.Actions>
+     <S.ButtonRemove onClick={remove}>
+          <BsFillTrashFill />
+          Excluir
+        </S.ButtonRemove> 
+      </S.Actions>*/}
     </S.Container>
   );
 };

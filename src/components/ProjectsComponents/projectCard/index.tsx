@@ -1,17 +1,20 @@
 import * as S from './styles';
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from '@/components/Buttons/ButtonDefault';
 
-const ProjetCard = ({ id, name, budget, category, handleRemove,handleOpen }: any) => {
-
-  const history = useNavigate();
-
+const ProjetCard = ({
+  id,
+  name,
+  budget,
+  category,
+  handleRemove,
+  handleOpen,
+}: any) => {
   const remove = (e: any) => {
     e.preventDefault();
     handleRemove(id);
   };
-
 
   return (
     <S.Container>
@@ -30,7 +33,12 @@ const ProjetCard = ({ id, name, budget, category, handleRemove,handleOpen }: any
           </S.Edit>
         </Link>
 
-        <Button action={remove} text={'Remover'} icon={<BsFillTrashFill />} width={'110px'}/>
+        <Button
+          action={remove}
+          text={'Remover'}
+          icon={<BsFillTrashFill />}
+          width={'110px'}
+        />
       </S.Actions>
     </S.Container>
   );

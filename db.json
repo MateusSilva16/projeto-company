@@ -1,5 +1,24 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Salão Tropical",
+      "budget": "500",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": null,
+      "services": [
+        {
+          "name": "Comprar tesouras",
+          "cost": "50",
+          "description": "Comprar 10 tesouras",
+          "id": "7800eec1-eb85-4dca-88d2-c1423d5e2c55"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

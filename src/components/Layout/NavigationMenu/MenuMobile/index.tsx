@@ -43,7 +43,7 @@ const NavigationMenuMobile = ({ close, open, openMenu }: MenuMobileProps) => {
               icon={<FiDollarSign color={tokens.colors.color3} size={18} />}
             />
           </div>
-          <div onClick={close}>
+      {/*     <div onClick={close}>
             <ItemMenu
               url="/company"
               text="Empresa"
@@ -56,7 +56,7 @@ const NavigationMenuMobile = ({ close, open, openMenu }: MenuMobileProps) => {
               text="Contatos"
               icon={<FiUser color={tokens.colors.color3} size={18} />}
             />
-          </div>
+          </div> */}
         </S.UlNav>
       </S.MenuHanburguer>
       <S.Overlay openMenu={openMenu} onClick={close} />

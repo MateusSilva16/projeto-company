@@ -1,7 +1,7 @@
 import Button from '@/components/Buttons/ButtonDefault';
 import Loading from '@/components/Loading';
 import Message from '@/components/Message';
-import ServiceForm from '@/components/ServiceComponents/serviceForm/serviceForm';
+import ServiceForm from '@/components/ServiceComponents/serviceForm';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Forms from '../../components/ProjectsComponents/projectForm';
@@ -12,9 +12,10 @@ import ServiceCard from '@/components/ServiceComponents/serviceCard';
 function EditProject() {
   let { id } = useParams();
   const [project, setProject] = useState<any>([]);
+  const [services, setServices] = useState<any>([]);
   const [showProjectForm, setShowProjectForm] = useState(false);
   const [showServiceForm, setShowServiceForm] = useState(false);
-  const [services, setServices] = useState<any>([]);
+
   const [message, setMessage] = useState('');
   const [type, setType] = useState(false);
 
@@ -99,7 +100,7 @@ function EditProject() {
       .catch((err) => console.error(err));
   }
 
-  function removeService({ id, cost }: any) {
+  /* function removeService({ id, cost }: any) {
     setMessage('');
     const servicesUpdated = project.services.filter(
       (service: any) => service.id !== id
@@ -111,7 +112,7 @@ function EditProject() {
     projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost);
 
     fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
-      method: 'DELETE',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -124,7 +125,7 @@ function EditProject() {
         setMessage('Serviço removido com sucesso!');
       })
       .catch((err) => console.error(err));
-  }
+  } */
 
   function toggledProjectForm() {
     setShowProjectForm(!showProjectForm);
@@ -158,12 +159,12 @@ function EditProject() {
                     <span>Total do Orçamento Inicial: </span>
                     R$ {project.budget}
                   </p>
-                  {/*  {project.cost > 0 && (
+                  {project.cost > 0 && (
                     <p>
                       <span>Restante do Orçamento: </span>
                       R$ {project.budget - project.cost}
                     </p>
-                  )} */}
+                  )}
                   <p>
                     <span>Total Utilizado: </span>
                     R$ {project.cost}
@@ -207,7 +208,7 @@ function EditProject() {
                     cost={service.cost}
                     description={service.description}
                     key={service.id}
-                    handleRemove={removeService}
+                    //handleRemove={removeService}
                   />
                 ))}
 

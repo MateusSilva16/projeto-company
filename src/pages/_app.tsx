@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 import Footer from '@/components/Layout/Footer';
 import NavigationMenuMobile from '@/components/Layout/NavigationMenu/MenuMobile';
 import NavigationMenuDesktop from '@/components/Layout/NavigationMenu/MenuDesktop';
-import AppProvider, { contextApp } from '../contexts/index';
 import Projects from './projects';
 import EditProject from './editProject';
 

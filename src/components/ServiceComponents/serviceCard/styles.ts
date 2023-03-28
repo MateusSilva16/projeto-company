@@ -45,8 +45,9 @@ export const TextCategory = styled.p`
 
 export const Actions = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  width: 120px;
 
   @media (max-width: 1147px) {
     flex-direction: column;
@@ -56,33 +57,20 @@ export const Actions = styled.div`
   }
 `;
 
-export const Edit = styled.button`
+export const ButtonRemove = styled.button`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #222;
-  color: ${tokens.colors.color4};
-  padding: 0.6em 1em;
-  font-size: 0.9em;
+  cursor: pointer;
+  background-color: ${tokens.colors.color4};
+  padding: 0.5em 1em;
+  text-decoration: none;
+  /*   transition: 0.5s; */
+  cursor: pointer;
+  color: ${tokens.colors.color1};
+  font-size: 1em;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  margin: 0.2em;
-  transition: 0.2s;
-
-  p {
-    margin: 0;
-    padding: 0 0.5em;
-  }
-
   :hover {
-    background-color: ${tokens.colors.color4};
-    color: #222;
-
-    p {
-      margin: 0;
-      padding: 0 0.5em;
-      color: #222;
-    }
+    background-color: ${tokens.colors.color1};
+    color: ${tokens.colors.color4};
   }
 `;

@@ -24,7 +24,7 @@ const NavigationMenuDesktop = ({}) => {
           text="Projetos"
           icon={<FiDollarSign color={tokens.colors.color3} size={18} />}
         />
-        <ItemMenu
+      {/*   <ItemMenu
           url="/company"
           text="Empresa"
           icon={<FiBriefcase color={tokens.colors.color3} size={18} />}
@@ -33,7 +33,7 @@ const NavigationMenuDesktop = ({}) => {
           url="/contacts"
           text="Contatos"
           icon={<FiUser color={tokens.colors.color3} size={18} />}
-        />
+        /> */}
       </S.UlNav>
     </S.ContainerNav>
   );
