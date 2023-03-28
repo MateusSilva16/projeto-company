@@ -17,11 +17,16 @@ Depois, execute o servidor de backend:
 npm run backend (http://localhost:5000/projects/) e (http://localhost:5000/categories/)
 
 
-## Sobre
+Sobre
+
+```bash
 
 Projeto desenvolvido para estudo, usado o json serve para simular a api
 
-## Aprendendo a usar
+
+Aprendendo a usar
+
+```bash
 
 Project Budeget ou (Projeto de Orçamento), é feito para calcular os orçamentos 
 de empresas e seus serviços adicionais. Para adiconar novas categorias, basta 
